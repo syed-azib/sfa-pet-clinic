@@ -1,4 +1,4 @@
-package azib.springframework.model;
+package azib.springframework.sfapetclinic.model;
 
 public class Person {
     private String firstName;
