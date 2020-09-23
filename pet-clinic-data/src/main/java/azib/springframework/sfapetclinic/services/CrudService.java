@@ -2,7 +2,7 @@ package azib.springframework.sfapetclinic.services;
 
 public interface CrudService<T, ID>  {
 
-    Set< T > findAll;
+    //Set< T > findAll;
 
     T findById(ID id);
 
