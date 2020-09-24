@@ -1,11 +1,11 @@
 package azib.springframework.sfapetclinic.services.map;
 
 import azib.springframework.sfapetclinic.model.Owner;
-import azib.springframework.sfapetclinic.services.CrudService;
+import azib.springframework.sfapetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
     @Override
     public Owner findById(Long id) {
@@ -30,5 +30,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
