@@ -3,9 +3,11 @@ package azib.springframework.sfapetclinic.services.map;
 import azib.springframework.sfapetclinic.model.Pet;
 import azib.springframework.sfapetclinic.services.CrudService;
 import azib.springframework.sfapetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

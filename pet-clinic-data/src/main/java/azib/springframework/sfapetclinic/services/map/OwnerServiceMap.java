@@ -2,9 +2,11 @@ package azib.springframework.sfapetclinic.services.map;
 
 import azib.springframework.sfapetclinic.model.Owner;
 import azib.springframework.sfapetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
     @Override
