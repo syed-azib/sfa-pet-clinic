@@ -1,5 +1,6 @@
 package azib.springframework.sfapetclinic.services.map;
 
+import azib.springframework.sfapetclinic.model.Owner;
 import azib.springframework.sfapetclinic.model.Vet;
 import azib.springframework.sfapetclinic.services.CrudService;
 import azib.springframework.sfapetclinic.services.VetService;
@@ -34,4 +35,6 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     public Set<Vet> findAll() {
         return super.findAll();
     }
+
+
 }
