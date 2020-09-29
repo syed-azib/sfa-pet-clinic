@@ -1,9 +1,11 @@
 package azib.springframework.sfapetclinic.bootstrap;
 
 import azib.springframework.sfapetclinic.model.Owner;
+import azib.springframework.sfapetclinic.model.PetType;
 import azib.springframework.sfapetclinic.model.Vet;
 import azib.springframework.sfapetclinic.services.OwnerService;
 import azib.springframework.sfapetclinic.services.PetService;
+import azib.springframework.sfapetclinic.services.PetTypeService;
 import azib.springframework.sfapetclinic.services.VetService;
 import azib.springframework.sfapetclinic.services.map.OwnerServiceMap;
 import azib.springframework.sfapetclinic.services.map.VetServiceMap;
@@ -17,14 +19,27 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
-    public DataLoader( OwnerService ownerService,  VetService vetService) {
+    public DataLoader( OwnerService ownerService,  VetService vetService, PetTypeService petTypeService) {
       this.ownerService = ownerService;
       this.vetService = vetService;
+      this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogPetType = petTypeService.save(dog);
+
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType savedCatPetType = petTypeService.save(cat);
+
+
 
         Owner owner1 = new Owner();
         owner1.setFirstName("Michael");
