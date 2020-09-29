@@ -1,13 +1,13 @@
 package azib.springframework.sfapetclinic.services.map;
 
 import azib.springframework.sfapetclinic.model.Speciality;
-import azib.springframework.sfapetclinic.services.SpecialtiesService;
+import azib.springframework.sfapetclinic.services.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialityMapService extends AbstractMapService<Speciality,Long> implements SpecialtiesService {
+public class SpecialityMapService extends AbstractMapService<Speciality,Long> implements SpecialityService {
     @Override
     public Speciality findById(Long id) {
         return super.findById(id);
