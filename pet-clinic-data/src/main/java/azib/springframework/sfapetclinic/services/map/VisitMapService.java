@@ -2,9 +2,11 @@ package azib.springframework.sfapetclinic.services.map;
 
 import azib.springframework.sfapetclinic.model.Visit;
 import azib.springframework.sfapetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 
