@@ -6,11 +6,14 @@ import azib.springframework.sfapetclinic.model.Vet;
 import azib.springframework.sfapetclinic.services.CrudService;
 import azib.springframework.sfapetclinic.services.SpecialityService;
 import azib.springframework.sfapetclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default","map"})
+
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialityService specialityService;
