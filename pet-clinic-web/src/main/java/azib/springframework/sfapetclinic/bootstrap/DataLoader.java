@@ -2,12 +2,9 @@ package azib.springframework.sfapetclinic.bootstrap;
 
 import azib.springframework.sfapetclinic.model.*;
 import azib.springframework.sfapetclinic.services.*;
-import azib.springframework.sfapetclinic.services.map.OwnerServiceMap;
-import azib.springframework.sfapetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 
 @Component
