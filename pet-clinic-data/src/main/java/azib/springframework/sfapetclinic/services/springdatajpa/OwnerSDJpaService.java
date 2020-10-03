@@ -6,6 +6,7 @@ import azib.springframework.sfapetclinic.repositories.OwnerRepository;
 import azib.springframework.sfapetclinic.repositories.PetRepository;
 import azib.springframework.sfapetclinic.repositories.PetTypeRepository;
 import azib.springframework.sfapetclinic.services.OwnerService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -13,6 +14,7 @@ import java.util.Optional;
 import java.util.Set;
 
 @Service
+@Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
