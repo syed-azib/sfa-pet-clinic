@@ -23,7 +23,6 @@ public class OwnerSDJpaService implements OwnerService {
 
     public OwnerSDJpaService(OwnerRepository ownerRepository, PetRepository petRepository, PetTypeRepository petTypeRepository) {
         this.ownerRepository = ownerRepository;
-
         this.petRepository = petRepository;
         this.petTypeRepository = petTypeRepository;
     }
