@@ -1,4 +1,4 @@
-package azib.springframework.formatters;
+package azib.springframework.sfapetclinic.formatters;
 
 import azib.springframework.sfapetclinic.model.PetType;
 import azib.springframework.sfapetclinic.services.PetTypeService;
